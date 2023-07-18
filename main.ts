@@ -23,10 +23,32 @@ radio.onReceivedNumber(function (receivedNumber) {
     }
 })
 function 左轉 () {
-	
+    sensors.DDMmotor(
+    AnalogPin.P13,
+    0,
+    AnalogPin.P14,
+    200
+    )
+    sensors.DDMmotor(
+    AnalogPin.P15,
+    1,
+    AnalogPin.P16,
+    200
+    )
 }
 function 右轉 () {
-	
+    sensors.DDMmotor(
+    AnalogPin.P13,
+    1,
+    AnalogPin.P14,
+    200
+    )
+    sensors.DDMmotor(
+    AnalogPin.P15,
+    0,
+    AnalogPin.P16,
+    200
+    )
 }
 function 放東西下去 () {
 	
@@ -38,12 +60,12 @@ function 直走 () {
 	
 }
 function 上升 () {
-	
+    pins.servoWritePin(AnalogPin.P8, 0)
 }
 function 停下來 () {
 	
 }
 function 下降 () {
-	
+    pins.servoWritePin(AnalogPin.P8, 180)
 }
 radio.setGroup(98)
