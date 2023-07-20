@@ -70,7 +70,7 @@ function 後退 () {
 function 直走 () {
     sensors.DDMmotor(
     AnalogPin.P13,
-    0,
+    1,
     AnalogPin.P14,
     200
     )
