@@ -1,5 +1,5 @@
 function 抬東西起來 () {
-	
+    pins.servoWritePin(AnalogPin.P1, 50)
 }
 radio.onReceivedNumber(function (receivedNumber) {
     if (receivedNumber == 4) {
@@ -51,7 +51,7 @@ function 右轉 () {
     )
 }
 function 放東西下去 () {
-	
+    pins.servoWritePin(AnalogPin.P1, 130)
 }
 function 後退 () {
     sensors.DDMmotor(
