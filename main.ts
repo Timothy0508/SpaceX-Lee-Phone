@@ -103,4 +103,4 @@ function 停下來 () {
 function 下降 () {
     pins.servoWritePin(AnalogPin.P8, 180)
 }
-radio.setGroup(98)
+radio.setGroup(103)
